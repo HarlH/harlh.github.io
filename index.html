@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chan Le — Data Analyst & BI</title>
+<title>Chan Le — Product & Data</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -629,6 +629,38 @@
     max-width: 600px;
   }
 
+  .timeline-list {
+    list-style: none;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .timeline-list li {
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .timeline-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 5px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .timeline-list li strong {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
   /* CONTATO */
   #contact { background: var(--bg); }
 
@@ -815,7 +847,7 @@
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="#hero" class="nav-logo">AL<span>.</span></a>
+  <a href="#hero" class="nav-logo">CL<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -827,13 +859,13 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
-    <div class="hero-label">Analytics & BI</div>
+    <div class="hero-label">Product & Data</div>
     <h1 class="hero-name">Le Ngoc<br>Bao Chan</h1>
     <p class="hero-title">
       Transforming data into <span class="highlight">impactful decisions</span>
     </p>
     <p class="hero-bio">
-      I help companies transform data into clear insights for decision-making. I develop interactive analyses and dashboards with Power BI, SQL and Python, connecting data from different sources and translating numbers into strategic actions.
+      I'm a product manager and data analyst. I turn data into clear insights for decision-making, building interactive analyses and dashboards with Power BI, SQL and Python, and translating numbers into strategic actions. In mobile games, I design progression and economy systems, simulate pricing, and shape live-ops features from research through PRD to iteration.
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">
@@ -864,9 +896,9 @@
   </div>
   <div class="about-grid">
     <div class="about-text reveal reveal-delay-1">
-      <div class="about-avatar">AL</div>
+      <div class="about-avatar">CL</div>
       <p>
-        Hi, I'm <strong>Chan Le</strong> — a Data Analyst with a background in Computer Science and Statistics with <strong>experience in industrial materials and hardware distribution sector</strong>. Throughout this journey, I developed the ability to understand businesses processes end-to-end and transform complex data into clear and actionable information.
+        Hi, I'm <strong>Chan Le</strong> — a Junior Product Manager at Hypereel and Data Analyst with a background in Computer Science and Statistics with <strong>experience in industrial materials and hardware distribution sector</strong>. Throughout this journey, I developed the ability to understand businesses processes end-to-end and transform complex data into clear and actionable information.
       </p>
       <p>
         Today I help companies <strong>structure, transform and analyze data</strong>, building modern pipelines and analytical solutions in cloud environments like BigQuery and Databricks. My focus is delivering dashboards and analyses that truly support strategic and operational decisions.
@@ -876,6 +908,28 @@
       </p>
     </div>
     <div class="about-skills reveal reveal-delay-2">
+      <h3>Product Management</h3>
+      <div class="tags">
+        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>PRD Writing</span>
+        <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Feature Ownership</span>
+        <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>Cross-team Coordination</span>
+        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Live-Ops</span>
+        <span class="tag"><span class="tag-dot" style="background:#fb7185"></span>Monetization</span>
+        <span class="tag"><span class="tag-dot" style="background:#4ade80"></span>Game Economy Design</span>
+        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Progression &amp; Leveling Systems</span>
+        <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Market &amp; Competitor Research</span>
+      </div>
+
+      <h3>Data Analytics</h3>
+      <div class="tags">
+        <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>KPI &amp; Metric Design</span>
+        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Funnel &amp; Conversion Analysis</span>
+        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Simulation &amp; Pricing Models</span>
+        <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Feature Adoption Analysis</span>
+        <span class="tag"><span class="tag-dot" style="background:#fb7185"></span>Statistical Modeling</span>
+        <span class="tag"><span class="tag-dot" style="background:#4ade80"></span>Root-Cause Analysis</span>
+      </div>
+
       <h3>Data Visualization</h3>
       <div class="tags">
         <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>Power BI</span>
@@ -1008,6 +1062,22 @@
   </div>
 
   <div class="timeline">
+
+    <!-- JUNIOR PRODUCT MANAGER -->
+    <div class="timeline-item reveal">
+      <div class="timeline-meta">
+        <span class="timeline-period">Jun 2026 — Present</span>
+        <span class="timeline-company">Hypereel</span>
+      </div>
+      <div class="timeline-role">Junior Product Manager — Mobile Games</div>
+      <ul class="timeline-list">
+        <li><strong>Owned the leveling and EXP system end to end</strong>, under a senior PM's supervision: researched and simulated the progression, set the EXP required per level, the reward at each level and which features unlock when, then wrote the PRD, coordinated across teams and kept iterating after release.</li>
+        <li><strong>Built the simulation used to price in-game items</strong> and skill cards; the game's item prices were set from my model. Also contributed analysis to board layout design.</li>
+        <li><strong>Designed dashboards and selected the metrics</strong> that track game performance, conversion funnels and feature adoption, informing product and live-ops decisions.</li>
+        <li><strong>Turned live-ops and monetization research into features</strong>, including sticker collection and cooldown-based resource refills.</li>
+        <li><strong>Spotted and fixed a live-ops configuration bug</strong> in a legacy title whose RTP was far below its design target. Found the root cause (double-counting of mutually exclusive outcomes) and proposed the corrective fix.</li>
+      </ul>
+    </div>
 
     <!-- DATA ANALYST -->
     <div class="timeline-item reveal reveal-delay-1">
