@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chan Le — Product & Data</title>
+<meta name="description" content="Chan Le: Junior Product Manager (mobile games) and data analyst. Game progression and economy design, live-ops, dashboards, SQL and Python.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chan Le — Product & Data">
+<meta property="og:description" content="Junior Product Manager (mobile games) and data analyst.">
+<meta name="theme-color" content="#080b10">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -20,8 +25,8 @@
     --accent-dim: rgba(0, 212, 170, 0.12);
     --accent-glow: rgba(0, 212, 170, 0.25);
     --text-primary: #f0f4f8;
-    --text-secondary: #8892a4;
-    --text-muted: #4a5568;
+    --text-secondary: #a3adbf;
+    --text-muted: #6b7788;
     --font-display: 'Syne', sans-serif;
     --font-body: 'DM Sans', sans-serif;
   }
@@ -190,11 +195,11 @@
   }
 
   .hero-bio {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     max-width: 560px;
     line-height: 1.75;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2.5rem;
     opacity: 0;
     animation: fadeUp 0.7s ease forwards 0.4s;
@@ -320,11 +325,11 @@
     font-size: 1rem;
     color: var(--text-secondary);
     max-width: 500px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7;
   }
 
-  /* SOBRE */
+  /* ABOUT */
   #about {
     background: var(--bg-2);
     border-top: 1px solid var(--border);
@@ -359,7 +364,7 @@
     font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1.25rem;
   }
 
@@ -415,7 +420,11 @@
   }
 
   /* PROJECTS */
-  #projects { background: var(--bg); }
+  #projects {
+    background: var(--bg-2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
 
   .projects-grid {
     display: grid;
@@ -426,7 +435,7 @@
 
   .project-card {
     position: relative;
-    background: var(--bg-2);
+    background: var(--bg-3);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 2rem;
@@ -492,10 +501,10 @@
   }
 
   .project-desc {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 400;
     flex: 1;
   }
 
@@ -544,12 +553,8 @@
   .st-streamlit { background: rgba(248, 113, 113, 0.12); color: #f87171; }
   .st-scrapy { background: rgba(74, 222, 128, 0.12); color: #4ade80; }
 
-  /* EXPERIÊNCIA */
-  #experience {
-    background: var(--bg-2);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
+  /* EXPERIENCE */
+  #experience { background: var(--bg); }
 
   .timeline {
     margin-top: 3.5rem;
@@ -622,10 +627,10 @@
   }
 
   .timeline-desc {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.75;
-    font-weight: 300;
+    font-weight: 400;
     max-width: 600px;
   }
 
@@ -640,10 +645,10 @@
   .timeline-list li {
     position: relative;
     padding-left: 1.1rem;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .timeline-list li::before {
@@ -661,22 +666,20 @@
     font-weight: 500;
   }
 
-  /* CONTATO */
+  /* CONTACT */
   #contact { background: var(--bg); }
 
   .contact-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-    margin-top: 3.5rem;
+    grid-template-columns: minmax(0, 520px);
+    margin-top: 2.5rem;
   }
 
   .contact-text p {
     font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
   }
 
@@ -737,39 +740,6 @@
     color: inherit;
   }
 
-  .contact-cta {
-    padding: 2.5rem;
-    background: var(--bg-2);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .contact-cta::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 70% 30%, rgba(0,212,170,0.06) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .contact-cta h3 {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: var(--text-primary);
-    margin-bottom: 0.75rem;
-  }
-
-  .contact-cta p {
-    font-size: 0.92rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    font-weight: 300;
-    margin-bottom: 1.75rem;
-  }
 
   /* FOOTER */
   footer {
@@ -785,7 +755,7 @@
   footer p {
     font-size: 0.8rem;
     color: var(--text-muted);
-    font-weight: 300;
+    font-weight: 400;
   }
 
   footer a {
@@ -823,6 +793,17 @@
   .reveal-delay-2 { transition-delay: 0.2s; }
   .reveal-delay-3 { transition-delay: 0.3s; }
 
+  a:focus-visible, .btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal, .hero-label, .hero-name, .hero-title, .hero-bio, .hero-actions, .hero-scroll { opacity: 1; transform: none; }
+  }
+
   /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 0 6%; }
@@ -850,8 +831,8 @@
   <a href="#hero" class="nav-logo">CL<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -892,80 +873,118 @@
 <section id="about">
   <div class="reveal">
     <div class="section-label">01 — About me</div>
-    <h2 class="section-title">From business experience<br>to data intelligence</h2>
+    <h2 class="section-title">Product thinking,<br>backed by data</h2>
   </div>
   <div class="about-grid">
     <div class="about-text reveal reveal-delay-1">
       <div class="about-avatar">CL</div>
       <p>
-        Hi, I'm <strong>Chan Le</strong> — a Junior Product Manager at Hypereel and Data Analyst with a background in Computer Science and Statistics with <strong>experience in industrial materials and hardware distribution sector</strong>. Throughout this journey, I developed the ability to understand businesses processes end-to-end and transform complex data into clear and actionable information.
-      </p>
-      <p>
-        Today I help companies <strong>structure, transform and analyze data</strong>, building modern pipelines and analytical solutions in cloud environments like BigQuery and Databricks. My focus is delivering dashboards and analyses that truly support strategic and operational decisions.
-      </p>
-      <p>
-       I have collaborated with <strong>national and international clients</strong>, always combining analytical rigor with data storytelling — because data only generates value when it is understood and transformed into action.
+        I'm a <strong>Junior Product Manager at Hypereel</strong> and a data analyst with a Computer Science and Statistics degree from UBC. I design progression and economy systems for mobile games, and I use SQL, Python and BI tools to turn data into decisions people can act on.
       </p>
     </div>
     <div class="about-skills reveal reveal-delay-2">
-      <h3>Product Management</h3>
+      <h3>Product</h3>
       <div class="tags">
         <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>PRD Writing</span>
         <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Feature Ownership</span>
-        <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>Cross-team Coordination</span>
-        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Live-Ops</span>
-        <span class="tag"><span class="tag-dot" style="background:#fb7185"></span>Monetization</span>
         <span class="tag"><span class="tag-dot" style="background:#4ade80"></span>Game Economy Design</span>
-        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Progression &amp; Leveling Systems</span>
-        <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Market &amp; Competitor Research</span>
+        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Progression Systems</span>
+        <span class="tag"><span class="tag-dot" style="background:#fb7185"></span>Live-Ops &amp; Monetization</span>
+        <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>Cross-team Coordination</span>
       </div>
 
-      <h3>Data Analytics</h3>
+      <h3>Analytics</h3>
       <div class="tags">
         <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>KPI &amp; Metric Design</span>
-        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Funnel &amp; Conversion Analysis</span>
-        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Simulation &amp; Pricing Models</span>
-        <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Feature Adoption Analysis</span>
+        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Funnel Analysis</span>
+        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Simulation &amp; Pricing</span>
         <span class="tag"><span class="tag-dot" style="background:#fb7185"></span>Statistical Modeling</span>
         <span class="tag"><span class="tag-dot" style="background:#4ade80"></span>Root-Cause Analysis</span>
       </div>
 
-      <h3>Data Visualization</h3>
+      <h3>Tools</h3>
       <div class="tags">
+        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>SQL</span>
+        <span class="tag"><span class="tag-dot" style="background:#3b82f6"></span>Python</span>
+        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>R</span>
         <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>Power BI</span>
         <span class="tag"><span class="tag-dot" style="background:#4285f4"></span>Looker Studio</span>
+        <span class="tag"><span class="tag-dot" style="background:#4285f4"></span>BigQuery</span>
         <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Streamlit</span>
       </div>
-
-      <h3>Programming Languages</h3>
-      <div class="tags">
-        <span class="tag"><span class="tag-dot" style="background:#3b82f6"></span>Python</span>
-        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>SQL</span>
-        <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>R</span>
-        <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>C/C++</span>
-        <span class="tag"><span class="tag-dot" style="background:#f59e0b"></span>Java</span>
-      </div>
-
-      <h3>Cloud</h3>
-      <div class="tags">
-        <span class="tag"><span class="tag-dot" style="background:#4285f4"></span>Google BigQuery</span>
-        <span class="tag"><span class="tag-dot" style="background:#00d4aa"></span>Snowflake</span>
-        <span class="tag"><span class="tag-dot" style="background:#e34a00"></span>Databricks</span>
-      </div>
-
-      <h3>Education</h3>
-      <div class="tags">
-        <span class="tag">Bachelor of Science in Computer Science and Statistics — University of British Columbia</span>
-        <span class="tag">Google Data Analytics Certificate</span>
-      </div>
     </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="reveal">
+    <div class="section-label">02 — Experience</div>
+    <h2 class="section-title">Experience</h2>
+    <p class="section-sub">Product work, backed by data.</p>
+  </div>
+
+  <div class="timeline">
+
+    <!-- JUNIOR PRODUCT MANAGER -->
+    <div class="timeline-item reveal">
+      <div class="timeline-meta">
+        <span class="timeline-period">Jun 2026 — Present</span>
+        <span class="timeline-company">Hypereel</span>
+      </div>
+      <div class="timeline-role">Junior Product Manager — Mobile Games</div>
+      <ul class="timeline-list">
+        <li><strong>Owned the leveling and EXP system</strong> under a senior PM: EXP per level, level rewards and feature unlocks, from research and simulation through PRD to post-release iteration.</li>
+        <li><strong>Built the simulation behind in-game item pricing</strong> and contributed analysis to board layout design.</li>
+        <li><strong>Designed dashboards and metrics</strong> for game performance, conversion funnels and feature adoption.</li>
+        <li><strong>Turned live-ops research into features</strong>, such as sticker collection and cooldown-based resource refills.</li>
+        <li><strong>Found the root cause of an RTP error</strong> in a legacy title's live-ops configuration and proposed the fix.</li>
+      </ul>
+    </div>
+
+    <!-- DATA ANALYST -->
+    <div class="timeline-item reveal reveal-delay-1">
+      <div class="timeline-meta">
+        <span class="timeline-period">Jun 2025 — Jan 2026</span>
+        <span class="timeline-company">Freelance</span>
+      </div>
+      <div class="timeline-role">Data Analyst</div>
+      <p class="timeline-desc">
+        End-to-end analytics for clients: extraction, transformation and dashboards in SQL, Python and BI tools. Insights contributed to a 10% increase in sales.
+      </p>
+    </div>
+
+    <!-- TRANSLATOR -->
+    <div class="timeline-item reveal reveal-delay-2">
+      <div class="timeline-meta">
+        <span class="timeline-period">Mar 2025 — Apr 2026</span>
+        <span class="timeline-company">Freelance</span>
+      </div>
+      <div class="timeline-role">Translator &amp; SEO Content Specialist</div>
+      <p class="timeline-desc">
+        English-to-Vietnamese translation of websites and technical content, plus SEO meta content to improve click-through rates.
+      </p>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="timeline-item reveal reveal-delay-3">
+      <div class="timeline-meta">
+        <span class="timeline-period">Education</span>
+        <span class="timeline-company">University of British Columbia</span>
+      </div>
+      <div class="timeline-role">BSc, Computer Science &amp; Statistics</div>
+      <p class="timeline-desc">
+        Foundation in statistical modeling, programming and data analysis. Google Data Analytics Certificate.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="reveal">
-    <div class="section-label">02 — Projects</div>
+    <div class="section-label">03 — Projects</div>
     <h2 class="section-title">Real cases,<br>real data</h2>
     <p class="section-sub">Projects that cover the complete cycle: from collection to insight, through modeling, engineering and visualization.</p>
   </div>
@@ -1053,88 +1072,17 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="reveal">
-    <div class="section-label">03 — Experience</div>
-    <h2 class="section-title">Career path</h2>
-    <p class="section-sub">A career built at the intersection between operations, business and data.</p>
-  </div>
-
-  <div class="timeline">
-
-    <!-- JUNIOR PRODUCT MANAGER -->
-    <div class="timeline-item reveal">
-      <div class="timeline-meta">
-        <span class="timeline-period">Jun 2026 — Present</span>
-        <span class="timeline-company">Hypereel</span>
-      </div>
-      <div class="timeline-role">Junior Product Manager — Mobile Games</div>
-      <ul class="timeline-list">
-        <li><strong>Owned the leveling and EXP system end to end</strong>, under a senior PM's supervision: researched and simulated the progression, set the EXP required per level, the reward at each level and which features unlock when, then wrote the PRD, coordinated across teams and kept iterating after release.</li>
-        <li><strong>Built the simulation used to price in-game items</strong> and skill cards; the game's item prices were set from my model. Also contributed analysis to board layout design.</li>
-        <li><strong>Designed dashboards and selected the metrics</strong> that track game performance, conversion funnels and feature adoption, informing product and live-ops decisions.</li>
-        <li><strong>Turned live-ops and monetization research into features</strong>, including sticker collection and cooldown-based resource refills.</li>
-        <li><strong>Spotted and fixed a live-ops configuration bug</strong> in a legacy title whose RTP was far below its design target. Found the root cause (double-counting of mutually exclusive outcomes) and proposed the corrective fix.</li>
-      </ul>
-    </div>
-
-    <!-- DATA ANALYST -->
-    <div class="timeline-item reveal reveal-delay-1">
-      <div class="timeline-meta">
-        <span class="timeline-period">Jun 2025 — Jan 2026</span>
-        <span class="timeline-company">Freelance</span>
-      </div>
-      <div class="timeline-role">Data Analyst</div>
-      <p class="timeline-desc">
-        Delivered end-to-end data analytics solutions, including data extraction, transformation, and visualization. 
-        Built interactive dashboards and analytical reports using SQL, Python, and BI tools to support business decision-making and performance tracking, resulting in a 10% increase in sales through data-driven insights
-      </p>
-    </div>
-
-    <!-- TRANSLATOR -->
-    <div class="timeline-item reveal reveal-delay-2">
-      <div class="timeline-meta">
-        <span class="timeline-period">Mar 2025 — Apr 2026</span>
-        <span class="timeline-company">Freelance</span>
-      </div>
-      <div class="timeline-role">Translator & SEO Content Specialist</div>
-      <p class="timeline-desc">
-        Translated websites, technical documentation, and marketing content from English to Vietnamese while preserving tone and context. 
-        Created SEO-optimized meta content to improve visibility and click-through rates, applying data-driven thinking to content performance.
-      </p>
-    </div>
-
-
-     <!-- EDUCATION -->    
-    <div class="timeline-item reveal reveal-delay-3">
-      <div class="timeline-meta">
-        <span class="timeline-period">Education</span>
-        <span class="timeline-company">University of British Columbia</span>
-      </div>
-      <div class="timeline-role">Bachelor of Computer Science & Statistics</div>
-      <p class="timeline-desc">
-        Where my interest in processes and data began, where statistical process control became part of my business vision.
-        Built a strong foundation in data analysis, statistical modeling, and computational problem-solving. 
-        Developed skills in programming, data structures, and statistical methods, forming the basis for data-driven decision making. 
-        Complemented academic training with certifications including the Google Data Analytics Certificate and coursework in Python, Data Science, and Power BI.
-      </p>
-    </div>
-
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="reveal">
     <div class="section-label">04 — Contact</div>
-    <h2 class="section-title">Let's work<br>together</h2>
+    <h2 class="section-title">Let's talk</h2>
   </div>
 
   <div class="contact-inner">
     <div class="contact-text reveal reveal-delay-1">
       <p>
-        Whether for a data project, analytical consulting or a conversation about opportunities — I'm available and respond within 24 hours. I believe that the best projects are born from a good initial conversation.
+        Open to product and analytics roles. I reply within 24 hours.
       </p>
 
       <div class="contact-links">
@@ -1173,16 +1121,6 @@
       </div>
     </div>
 
-    <div class="contact-cta reveal reveal-delay-2">
-      <h3>Available for new projects</h3>
-      <p>
-        If you need someone to build data pipelines, insightful dashboards, or predictive models that generate value — let's talk. Each project starts with understanding the business problem before any line of code.
-      </p>
-      <a href="mailto:lengocbaochan@gmail.com" class="btn btn-primary" style="display:inline-flex;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Send message
-      </a>
-    </div>
   </div>
 </section>
 
